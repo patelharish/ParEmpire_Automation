@@ -61,6 +61,6 @@ jobs:
 
             Regards,  
             GitHub Actions
-          to: patelharish304@gmail.com,harishpatel6260@gmail.com,harishpatel8364@gmail.com
+          to: patelharish304@gmail.com,harishpatel6260@gmail.com,harishpatel8364@gmail.com,harishpatel01.gh@gmail.com
           from: GitHub Actions <${{ secrets.EMAIL_USER }}>
           attachments: ${{ steps.find_report.outputs.report_path }}
