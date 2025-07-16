@@ -154,8 +154,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;ParEmpireTestCases.ParPlpSorting&quot;/&gt;
     &lt;/classes&gt;
@@ -199,18 +199,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LowToHighSorting')
+data.setCell(0, 1, 'highToLowSorting')
 data.setCell(0, 2, 'ParEmpireTestCases.ParPlpSorting')
-data.setCell(0, 3, 24670);
+data.setCell(0, 3, 16345);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'highToLowSorting')
+data.setCell(1, 1, 'LowToHighSorting')
 data.setCell(1, 2, 'ParEmpireTestCases.ParPlpSorting')
-data.setCell(1, 3, 16882);
+data.setCell(1, 3, 10767);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -243,23 +243,23 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LowToHighSorting</span>
-                <span class="method-start">6438 ms</span>
+                <span class="method-start">4596 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31114 ms</span>
+                <span class="method-start">15367 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">31523 ms</span>
+                <span class="method-start">15757 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">highToLowSorting</span>
-                <span class="method-start">35171 ms</span>
+                <span class="method-start">19642 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52056 ms</span>
+                <span class="method-start">35988 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
