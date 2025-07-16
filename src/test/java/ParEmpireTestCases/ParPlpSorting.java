@@ -1,47 +1,17 @@
 package ParEmpireTestCases;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import org.apache.logging.log4j.Logger;
 
-public class ParPlpSorting {
-
-	WebDriverWait wait;
-	WebDriver driver;
-	JavascriptExecutor js;
-
-	@BeforeMethod
-	public void setUp() {
-		ChromeOptions option = new ChromeOptions();
-		option.addArguments("--headless");
-		option.addArguments("--no-sandbox");
-		option.addArguments("--disable-dev-shm-usage");
-		option.addArguments("start-maximized");
-		driver = new ChromeDriver(option);
-		driver.get("https://www.parempire.com/category/beverages");
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		By sortingBtnLocator = By.cssSelector("#km-select-sort");
-		WebElement sortingBtnElement = wait.until(ExpectedConditions.visibilityOfElementLocated(sortingBtnLocator));
-		sortingBtnElement.click();
-
-		js = (JavascriptExecutor) driver;
-
-	}
+public class ParPlpSorting extends BaseTest{
 
 	@Test()
 	public void highToLowSorting() throws InterruptedException {
@@ -156,8 +126,4 @@ public class ParPlpSorting {
 		System.out.println("prices are sorted");
 	}
 
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
 }
