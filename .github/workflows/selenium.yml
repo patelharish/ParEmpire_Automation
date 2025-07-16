@@ -34,22 +34,22 @@ jobs:
     - name: Run Selenium Tests
       run: mvn test		   
 			   
-			- name: Send Email Notification
-			           uses: dawidd6/action-send-mail@v3
-			           with:
-			             server_address: smtp.gmail.com
-			             server_port: 587
-			             username: ${{ secrets.EMAIL_USER }}
-			             password: ${{ secrets.EMAIL_PASS }}
-			             subject: "🧪 Selenium Build ${{ job.status }}"
-			             body: |
-			               Hello team,
+	  - name: Send Email Notification
+	    uses: dawidd6/action-send-mail@v3
+	    with:
+	      server_address: smtp.gmail.com
+	      server_port: 587
+	      username: ${{ secrets.EMAIL_USER }}
+	      password: ${{ secrets.EMAIL_PASS }}
+	      subject: "🧪 Selenium Build ${{ job.status }}"
+	      body: |
+	        Hello team,
 
-			               The Selenium test run has completed.
-			               ✅ Status: ${{ job.status }}
-			               🔗 Workflow: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+	        The Selenium test run has completed.
+	        ✅ Status: ${{ job.status }}
+	        🔗 Workflow: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-			               Regards,  
-			               GitHub Actions
-			             to: your-team@example.com
-			             from: GitHub Actions <${{ secrets.EMAIL_USER }}>
+	        Regards,  
+	        GitHub Actions
+	      to: your-team@example.com
+	      from: GitHub Actions <${{ secrets.EMAIL_USER }}>
