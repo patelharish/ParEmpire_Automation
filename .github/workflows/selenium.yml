@@ -51,5 +51,5 @@ jobs:
 
             Regards,  
             GitHub Actions
-          to: your-team@example.com
+          to: patelharish304@gmail.com,harishpatel6260@gmail.com,harishpatel8364@gmail.com
           from: GitHub Actions <${{ secrets.EMAIL_USER }}>
