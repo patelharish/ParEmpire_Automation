@@ -1,19 +1,44 @@
-- name: Send Email Notification
-  uses: dawidd6/action-send-mail@v3
-  with:
-    server_address: smtp.gmail.com
-    server_port: 587
-    username: ${{ secrets.EMAIL_USER }}
-    password: ${{ secrets.EMAIL_PASS }}
-    subject: 🧪 Selenium Build ${{ job.status }}
-    body: |
-      Hello team,
+- name: Selenium Tests with Email Notification
 
-      The Selenium test run has completed.
-      ✅ Status: ${{ job.status }}
-      🔗 Workflow: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
 
-      Regards,
-      GitHub Actions
-    to: your-team@example.com
-    from: GitHub Actions <${{ secrets.EMAIL_USER }}>
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run Selenium Tests
+        run: mvn clean test
+
+      - name: Send Email Notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
+          subject: 🧪 Selenium Build ${{ job.status }}
+          body: |
+            Hello team,
+
+            The Selenium test run has completed.
+            ✅ Status: ${{ job.status }}
+            🔗 Workflow: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Regards,
+            GitHub Actions
+          to: your-team@example.com
+          from: GitHub Actions <${{ secrets.EMAIL_USER }}>
