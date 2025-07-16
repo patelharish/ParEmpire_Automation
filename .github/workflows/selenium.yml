@@ -34,30 +34,33 @@ jobs:
       - name: Run Selenium Tests
         run: mvn test
 
-		- name: Find latest Extent Report
-		  id: find_report
-		  run: |
-		    latest_report=$(ls -t test-output/ExtentReport_*.html | head -n 1)
-		    echo "report_path=$latest_report" >> $GITHUB_OUTPUT
+      # ✅ NEW STEP: Find Latest Extent Report
+      - name: Find latest ExtentReport HTML
+        id: find_report
+        run: |
+          latest_report=$(ls -t test-output/ExtentReport_*.html | head -n 1)
+          echo "report_path=$latest_report" >> "$GITHUB_OUTPUT"
 
-		- name: Upload Extent Report to GitHub Artifacts
-		  uses: actions/upload-artifact@v4
-		  with:
-		    name: ExtentReport
-		    path: ${{ steps.find_report.outputs.report_path }}
+      # ✅ MODIFIED: Attach ExtentReport to email
+      - name: Send Email Notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
+          subject: "🧪 Selenium Build ${{ job.status }}"
+          body: |
+            Hello team,
 
-			body: |
-			  Hello team,
+            The Selenium test run has completed.
+            ✅ Status: ${{ job.status }}
+            🔗 Workflow: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-			  ✅ The Selenium test run has completed.
-			  📄 You can download the test report here:
-			  🔗 https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            📎 The ExtentReport is attached to this email.
 
-			  Go to the "Artifacts" section on the right to download the ExtentReport.
-
-			  Regards,  
-			  GitHub Actions
-
+            Regards,  
+            GitHub Actions
           to: patelharish304@gmail.com,harishpatel6260@gmail.com,harishpatel8364@gmail.com
           from: GitHub Actions <${{ secrets.EMAIL_USER }}>
           attachments: ${{ steps.find_report.outputs.report_path }}
