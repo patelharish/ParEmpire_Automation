@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T14:55:28 IST" name="Suite" finished-at="2025-07-16T14:56:03 IST" duration-ms="34886">
+  <suite started-at="2025-07-16T18:40:16 IST" name="Default suite" finished-at="2025-07-16T18:41:03 IST" duration-ms="47579">
     <groups>
     </groups>
-    <test started-at="2025-07-16T14:55:28 IST" name="Test" finished-at="2025-07-16T14:56:03 IST" duration-ms="34886">
+    <test started-at="2025-07-16T18:40:16 IST" name="Default test" finished-at="2025-07-16T18:41:03 IST" duration-ms="47579">
       <class name="ParEmpireTestCases.ParPlpSorting">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:55:28 IST" name="setupReport" finished-at="2025-07-16T14:55:28 IST" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:40:15 IST" name="setupReport" finished-at="2025-07-16T18:40:16 IST" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:55:28 IST" name="setUp" finished-at="2025-07-16T14:55:34 IST" duration-ms="5400" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:40:16 IST" name="setUp" finished-at="2025-07-16T18:40:23 IST" duration-ms="6674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LowToHighSorting()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:55:34 IST" name="LowToHighSorting" finished-at="2025-07-16T14:55:44 IST" duration-ms="10431" status="PASS">
+        <test-method signature="LowToHighSorting()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:40:23 IST" name="LowToHighSorting" finished-at="2025-07-16T18:40:40 IST" duration-ms="17184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LowToHighSorting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:55:44 IST" name="tearDown" finished-at="2025-07-16T14:55:44 IST" duration-ms="355" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:40:40 IST" name="tearDown" finished-at="2025-07-16T18:40:41 IST" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:55:44 IST" name="setUp" finished-at="2025-07-16T14:55:50 IST" duration-ms="5173" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:40:41 IST" name="setUp" finished-at="2025-07-16T18:40:45 IST" duration-ms="4194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="highToLowSorting()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:55:50 IST" name="highToLowSorting" finished-at="2025-07-16T14:56:03 IST" duration-ms="13110" status="PASS">
+        <test-method signature="highToLowSorting()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:40:45 IST" name="highToLowSorting" finished-at="2025-07-16T18:41:03 IST" duration-ms="17922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highToLowSorting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:56:03 IST" name="tearDown" finished-at="2025-07-16T14:56:03 IST" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:41:03 IST" name="tearDown" finished-at="2025-07-16T18:41:03 IST" duration-ms="725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@5884a914]" started-at="2025-07-16T14:56:03 IST" name="tearDownReport" finished-at="2025-07-16T14:56:04 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@42a48628]" started-at="2025-07-16T18:41:04 IST" name="tearDownReport" finished-at="2025-07-16T18:41:04 IST" duration-ms="570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
       </class> <!-- ParEmpireTestCases.ParPlpSorting -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

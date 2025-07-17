@@ -6,8 +6,10 @@
       <class name="ParEmpireTestCases.ParPlpSorting">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="tearDownReport"/>
           <include name="LowToHighSorting"/>
+          <include name="setupReport"/>
+          <include name="setUp"/>
           <include name="highToLowSorting"/>
         </methods>
       </class> <!-- ParEmpireTestCases.ParPlpSorting -->

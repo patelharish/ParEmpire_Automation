@@ -15,6 +15,17 @@ public class ParPlpSorting extends BaseTest{
 
 	@Test()
 	public void highToLowSorting() throws InterruptedException {
+		By beverageCategoryMenuLocator = By.xpath("//a[@href=\"/category/beverages\"]");
+		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));
+		beverageCategoryElement.click();
+		
+		js.executeScript("window.scrollTo(0, 0)");
+		
+		By sortingBtnLocator = By.cssSelector("#km-select-sort");
+		WebElement sortingBtnElement = wait.until(ExpectedConditions.visibilityOfElementLocated(sortingBtnLocator));
+		sortingBtnElement.click();
+
+		
 		By highToLowOptionLocator = By.cssSelector(".price-high-low");
 		WebElement highToLowElement = wait.until(ExpectedConditions.visibilityOfElementLocated(highToLowOptionLocator));
 		//logger.info("Selecting High to Low Option...");
@@ -73,6 +84,17 @@ public class ParPlpSorting extends BaseTest{
 
 	@Test
 	public void LowToHighSorting() throws InterruptedException {
+		
+		By beverageCategoryMenuLocator = By.xpath("//a[@href=\"/category/beverages\"]");
+		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));
+		beverageCategoryElement.click();
+		
+		js.executeScript("window.scrollTo(0, 0)");
+		
+		By sortingBtnLocator = By.cssSelector("#km-select-sort");
+		WebElement sortingBtnElement = wait.until(ExpectedConditions.visibilityOfElementLocated(sortingBtnLocator));
+		sortingBtnElement.click();
+		
 		By lowToHighOptionLocator = By.cssSelector(".price-low-high");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(lowToHighOptionLocator)).click();
 
