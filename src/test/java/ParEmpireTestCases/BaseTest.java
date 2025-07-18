@@ -42,7 +42,7 @@ public class BaseTest {
 		//option.addArguments("--disable-dev-shm-usage");
 		option.addArguments("start-maximized");
 		driver = new ChromeDriver(option);
-		driver.get("https://www.parempire.com/");
+		driver.get("https://parempire.uatkartmax.com/");
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		
 		js = (JavascriptExecutor) driver;
@@ -51,6 +51,6 @@ public class BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 }

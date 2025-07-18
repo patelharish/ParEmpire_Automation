@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ParEmpireTestCases.ParPlpSorting">
+      <class name="ParEmpireTestCases.CartPriceCalculation">
         <methods>
           <include name="tearDown"/>
           <include name="tearDownReport"/>
-          <include name="LowToHighSorting"/>
           <include name="setupReport"/>
           <include name="setUp"/>
-          <include name="highToLowSorting"/>
+          <include name="cartCalc"/>
         </methods>
-      </class> <!-- ParEmpireTestCases.ParPlpSorting -->
+      </class> <!-- ParEmpireTestCases.CartPriceCalculation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
