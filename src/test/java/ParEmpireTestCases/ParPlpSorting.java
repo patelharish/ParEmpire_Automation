@@ -19,7 +19,7 @@ public class ParPlpSorting extends BaseTest{
 		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));
 		beverageCategoryElement.click();
 		
-		js.executeScript("window.scrollTo(0, 0)");
+		driver.findElement(By.xpath("(//input[@onkeyup=\"kmSearch()\"])[1]")).click();
 		
 		By sortingBtnLocator = By.cssSelector("#km-select-sort");
 		WebElement sortingBtnElement = wait.until(ExpectedConditions.visibilityOfElementLocated(sortingBtnLocator));
@@ -89,7 +89,7 @@ public class ParPlpSorting extends BaseTest{
 		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));
 		beverageCategoryElement.click();
 		
-		js.executeScript("window.scrollTo(0, 0)");
+		driver.findElement(By.xpath("(//input[@onkeyup=\"kmSearch()\"])[1]")).click();
 		
 		By sortingBtnLocator = By.cssSelector("#km-select-sort");
 		WebElement sortingBtnElement = wait.until(ExpectedConditions.visibilityOfElementLocated(sortingBtnLocator));
