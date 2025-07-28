@@ -38,10 +38,10 @@ public class BaseTest {
 	public void setUp() {
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("start-maximized");
-		//option.addArguments("--headless");
-		//option.addArguments("--window-size=1920,1080");
-	   // option.addArguments("--no-sandbox");
-		//option.addArguments("--disable-dev-shm-usage");
+		option.addArguments("--headless");
+		option.addArguments("--window-size=1920,1080");
+	    option.addArguments("--no-sandbox");
+		option.addArguments("--disable-dev-shm-usage");
 		driver = new ChromeDriver(option);
 		driver.get("https://parempire.com/");
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
