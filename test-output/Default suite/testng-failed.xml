@@ -5,7 +5,6 @@
     <classes>
       <class name="ParEmpireTestCases.CartPriceCalculation">
         <methods>
-          <include name="tearDown"/>
           <include name="tearDownReport"/>
           <include name="setupReport"/>
           <include name="setUp"/>

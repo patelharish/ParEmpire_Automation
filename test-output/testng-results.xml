@@ -1,27 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-25T18:43:47 IST" name="Suite" finished-at="2025-07-25T18:44:55 IST" duration-ms="68001">
+  <suite started-at="2025-07-28T12:46:55 IST" name="Default suite" finished-at="2025-07-28T12:47:12 IST" duration-ms="17612">
     <groups>
     </groups>
-    <test started-at="2025-07-25T18:43:47 IST" name="Test" finished-at="2025-07-25T18:44:55 IST" duration-ms="68001">
+    <test started-at="2025-07-28T12:46:55 IST" name="Default test" finished-at="2025-07-28T12:47:12 IST" duration-ms="17612">
       <class name="ParEmpireTestCases.CartPriceCalculation">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@16150369]" started-at="2025-07-25T18:44:37 IST" name="setUp" finished-at="2025-07-25T18:44:41 IST" duration-ms="4763" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:46:54 IST" name="setupReport" finished-at="2025-07-28T12:46:55 IST" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:46:55 IST" name="setUp" finished-at="2025-07-28T12:47:06 IST" duration-ms="11637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="cartCalc()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@16150369]" started-at="2025-07-25T18:44:41 IST" name="cartCalc" finished-at="2025-07-25T18:44:54 IST" duration-ms="12979" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
+        <test-method signature="cartCalc()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:47:07 IST" name="cartCalc" finished-at="2025-07-28T12:47:12 IST" duration-ms="5895" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[For input string: ""]]>
+              <![CDATA[element click intercepted: Element is not clickable at point (516, 634)
+  (Session info: chrome=138.0.7204.169)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed053c4f528c01f3a74409e40539db75, clickElement {id=f.F5DAADD7BC60332C54623A3BA39194E2.d.DEED94BCC4A3939C760E719F06D531E0.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54200/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ed053c4f528c01f3a74409e40539db75)] -> xpath: (//div[@class="addtocard"])[1]]
+Session ID: ed053c4f528c01f3a74409e40539db75]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: ""
-at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-at java.base/java.lang.Integer.parseInt(Integer.java:678)
-at java.base/java.lang.Integer.parseInt(Integer.java:786)
-at ParEmpireTestCases.CartPriceCalculation.cartCalc(CartPriceCalculation.java:60)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (516, 634)
+  (Session info: chrome=138.0.7204.169)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed053c4f528c01f3a74409e40539db75, clickElement {id=f.F5DAADD7BC60332C54623A3BA39194E2.d.DEED94BCC4A3939C760E719F06D531E0.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54200/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ed053c4f528c01f3a74409e40539db75)] -> xpath: (//div[@class="addtocard"])[1]]
+Session ID: ed053c4f528c01f3a74409e40539db75
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at ParEmpireTestCases.CartPriceCalculation.cartCalc(CartPriceCalculation.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,49 +83,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartCalc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@16150369]" started-at="2025-07-25T18:44:54 IST" name="tearDown" finished-at="2025-07-25T18:44:55 IST" duration-ms="591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- ParEmpireTestCases.CartPriceCalculation -->
-      <class name="ParEmpireTestCases.ParPlpSorting">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:43:47 IST" name="setupReport" finished-at="2025-07-25T18:43:47 IST" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:43:47 IST" name="setUp" finished-at="2025-07-25T18:43:54 IST" duration-ms="6734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LowToHighSorting()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:43:54 IST" name="LowToHighSorting" finished-at="2025-07-25T18:44:12 IST" duration-ms="18374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LowToHighSorting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:44:12 IST" name="tearDown" finished-at="2025-07-25T18:44:13 IST" duration-ms="602" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:44:13 IST" name="setUp" finished-at="2025-07-25T18:44:18 IST" duration-ms="4960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="highToLowSorting()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:44:18 IST" name="highToLowSorting" finished-at="2025-07-25T18:44:36 IST" duration-ms="18352" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- highToLowSorting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:44:36 IST" name="tearDown" finished-at="2025-07-25T18:44:37 IST" duration-ms="520" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:ParEmpireTestCases.ParPlpSorting@60f00693]" started-at="2025-07-25T18:44:55 IST" name="tearDownReport" finished-at="2025-07-25T18:44:56 IST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:47:13 IST" name="tearDownReport" finished-at="2025-07-28T12:47:13 IST" duration-ms="735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- ParEmpireTestCases.ParPlpSorting -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- ParEmpireTestCases.CartPriceCalculation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

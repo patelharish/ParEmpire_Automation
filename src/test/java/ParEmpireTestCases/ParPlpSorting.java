@@ -15,7 +15,7 @@ public class ParPlpSorting extends BaseTest{
 
 	@Test()
 	public void highToLowSorting() throws InterruptedException {
-		By beverageCategoryMenuLocator = By.xpath("//a[@href=\"/category/beverages\"]");
+		By beverageCategoryMenuLocator = By.xpath("//a[contains(@href, 'category/beverages')]");
 		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));
 		beverageCategoryElement.click();
 		
@@ -85,7 +85,7 @@ public class ParPlpSorting extends BaseTest{
 	@Test
 	public void LowToHighSorting() throws InterruptedException {
 		
-		By beverageCategoryMenuLocator = By.xpath("//a[@href=\"/category/beverages\"]");
+		By beverageCategoryMenuLocator = By.xpath("//a[contains(@href, 'category/beverages')]");
 		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));
 		beverageCategoryElement.click();
 		
