@@ -8,6 +8,7 @@
 		<classes>
 			<class name="ParEmpireTestCases.ParPlpSorting" />
 			<class name="ParEmpireTestCases.CartPriceCalculation" />
+			<class name="ParEmpireTestCases.LoginTest" />
 		</classes>
 	</test> <!--
 	Test -->

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ParEmpireTestCases.CartPriceCalculation">
+      <class name="ParEmpireTestCases.LoginTest">
         <methods>
           <include name="tearDownReport"/>
           <include name="setupReport"/>
+          <include name="loginWithValidCredentials"/>
           <include name="setUp"/>
-          <include name="cartCalc"/>
         </methods>
-      </class> <!-- ParEmpireTestCases.CartPriceCalculation -->
+      </class> <!-- ParEmpireTestCases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

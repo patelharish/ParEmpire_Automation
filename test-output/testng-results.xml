@@ -1,97 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-28T12:46:55 IST" name="Default suite" finished-at="2025-07-28T12:47:12 IST" duration-ms="17612">
+  <suite started-at="2025-07-31T15:37:39 IST" name="Default suite" finished-at="2025-07-31T15:37:52 IST" duration-ms="13557">
     <groups>
     </groups>
-    <test started-at="2025-07-28T12:46:55 IST" name="Default test" finished-at="2025-07-28T12:47:12 IST" duration-ms="17612">
-      <class name="ParEmpireTestCases.CartPriceCalculation">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:46:54 IST" name="setupReport" finished-at="2025-07-28T12:46:55 IST" duration-ms="673" status="PASS">
+    <test started-at="2025-07-31T15:37:39 IST" name="Default test" finished-at="2025-07-31T15:37:52 IST" duration-ms="13557">
+      <class name="ParEmpireTestCases.LoginTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:ParEmpireTestCases.LoginTest@6cf0e0ba]" started-at="2025-07-31T15:37:38 IST" name="setupReport" finished-at="2025-07-31T15:37:39 IST" duration-ms="435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:46:55 IST" name="setUp" finished-at="2025-07-28T12:47:06 IST" duration-ms="11637" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ParEmpireTestCases.LoginTest@6cf0e0ba]" started-at="2025-07-31T15:37:39 IST" name="setUp" finished-at="2025-07-31T15:37:44 IST" duration-ms="5588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="cartCalc()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:47:07 IST" name="cartCalc" finished-at="2025-07-28T12:47:12 IST" duration-ms="5895" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (516, 634)
-  (Session info: chrome=138.0.7204.169)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed053c4f528c01f3a74409e40539db75, clickElement {id=f.F5DAADD7BC60332C54623A3BA39194E2.d.DEED94BCC4A3939C760E719F06D531E0.e.138}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54200/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ed053c4f528c01f3a74409e40539db75)] -> xpath: (//div[@class="addtocard"])[1]]
-Session ID: ed053c4f528c01f3a74409e40539db75]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (516, 634)
-  (Session info: chrome=138.0.7204.169)
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed053c4f528c01f3a74409e40539db75, clickElement {id=f.F5DAADD7BC60332C54623A3BA39194E2.d.DEED94BCC4A3939C760E719F06D531E0.e.138}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54200/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ed053c4f528c01f3a74409e40539db75)] -> xpath: (//div[@class="addtocard"])[1]]
-Session ID: ed053c4f528c01f3a74409e40539db75
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at ParEmpireTestCases.CartPriceCalculation.cartCalc(CartPriceCalculation.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:ParEmpireTestCases.LoginTest@6cf0e0ba]" started-at="2025-07-31T15:37:44 IST" name="loginWithValidCredentials" finished-at="2025-07-31T15:37:52 IST" duration-ms="7906" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cartCalc -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:ParEmpireTestCases.CartPriceCalculation@6cf0e0ba]" started-at="2025-07-28T12:47:13 IST" name="tearDownReport" finished-at="2025-07-28T12:47:13 IST" duration-ms="735" status="PASS">
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:ParEmpireTestCases.LoginTest@6cf0e0ba]" started-at="2025-07-31T15:37:52 IST" name="tearDownReport" finished-at="2025-07-31T15:37:53 IST" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- ParEmpireTestCases.CartPriceCalculation -->
+      </class> <!-- ParEmpireTestCases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
