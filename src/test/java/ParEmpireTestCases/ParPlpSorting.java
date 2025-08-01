@@ -13,7 +13,7 @@ import org.testng.annotations.*;
 
 public class ParPlpSorting extends BaseTest{
 
-	@Test()
+	@Test(description = "verify plp sorting high to low")
 	public void highToLowSorting() throws InterruptedException {
 		By beverageCategoryMenuLocator = By.xpath("//a[contains(@href, 'category/beverages')]");
 		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));
@@ -82,7 +82,7 @@ public class ParPlpSorting extends BaseTest{
 		System.out.println("prices are sorted");
 	}
 
-	@Test
+	@Test(description = "verify plp sorting low to high")
 	public void LowToHighSorting() throws InterruptedException {
 		
 		By beverageCategoryMenuLocator = By.xpath("//a[contains(@href, 'category/beverages')]");

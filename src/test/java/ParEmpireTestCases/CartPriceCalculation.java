@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class CartPriceCalculation extends BaseTest{
 
-	@Test
+	@Test(description = "verify cart price calculation")
 	public void cartCalc() throws InterruptedException {
 		By beverageCategoryMenuLocator = By.xpath("//a[contains(@href, 'category/beverages')]");
 		WebElement beverageCategoryElement = wait.until(ExpectedConditions.visibilityOfElementLocated(beverageCategoryMenuLocator));

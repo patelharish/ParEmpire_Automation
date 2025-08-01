@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest{
 
-	@Test
+	@Test(description = "verify login with valid username and valid password")
 	public void loginWithValidCredentials() {
 	 loginApplication();
 	 By successMsgLocator = By.cssSelector(".toasted.success");

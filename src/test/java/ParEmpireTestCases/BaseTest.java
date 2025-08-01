@@ -37,7 +37,7 @@ public class BaseTest {
 		extent.flush();
 	}
     
-	@BeforeMethod
+	@BeforeMethod(description = "Launching the application")
 	public void setUp() {
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("start-maximized");

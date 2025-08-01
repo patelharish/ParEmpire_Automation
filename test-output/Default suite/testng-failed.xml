@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ParEmpireTestCases.LoginTest">
+      <class name="ParEmpireTestCases.WishlistTest">
         <methods>
+          <include name="verifyPlpWishlist"/>
           <include name="tearDownReport"/>
           <include name="setupReport"/>
-          <include name="loginWithValidCredentials"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- ParEmpireTestCases.LoginTest -->
+      </class> <!-- ParEmpireTestCases.WishlistTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
